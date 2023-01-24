@@ -1,15 +1,23 @@
 {
-  "name": "node-server-stuff",
+  "name": "nodejs-complete-guide",
   "version": "1.0.0",
-  "description": "Node server fun",
-  "main": "routes.js",
+  "description": "Complete Node.js Guide",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js --watch"
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
   },
-  "author": "Ahad Bokhari <ahadbokhari@gmail.com> (http://ahadb.com)",
+  "author": "Maximilian Schwarzmüller",
   "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
   "dependencies": {
-    "nodemon": "^2.0.20"
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "pug": "^2.0.3"
   }
 }
